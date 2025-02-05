@@ -66,7 +66,7 @@ export default function Home() {
                   <div className="motion-preset-slide-right flex items-center justify-center gap-2 font-space-mono text-violet-dark motion-duration-500 motion-delay-200">
                     <Bell className="motion-preset-seesaw size-10" />
                     <p>
-                      I'm open for new opportunities, feel free to{" "}
+                      I&apos;m open for new opportunities, feel free to{" "}
                       <a
                         href="#contact"
                         className="cursor-pointer underline hover:text-yellow-light active:text-yellow-base"
@@ -97,26 +97,26 @@ export default function Home() {
               <div className="size-3 animate-wave rounded-full bg-violet-medium transition-all duration-200 ease-in-out motion-delay-300"></div>
             </div>
             <p className="hidden font-space-mono text-violet-dark xl:block">
-              Hi, I'm Leos, a fullstack developer specializing in{" "}
+              Hi, I&apos;m Leos, a fullstack developer specializing in{" "}
               <span className="font-bold">NextJS and ReactJS</span>, with a
               passion for creating user-centric experiences through{" "}
               <span className="font-bold">UX/UI design</span>. With three years
-              of experience in modern web development, I've experience working
+              of experience in modern web development, I&apos;ve experience working
               with frontend and backend technologies, including{" "}
               <span className="font-bold">
                 Express, SQL, and NoSQL databases
               </span>
               . My portfolio is a testament to my ability to transform ideas
               into reality, showcasing a range of projects that embody my
-              commitment to innovation and user-friendly design. Let's build
+              commitment to innovation and user-friendly design. Let&apos;s build
               something together!
             </p>
             <p className="font-space-mono text-violet-dark xl:hidden">
-              Hi, I'm Leos, a fullstack developer specializing in{" "}
+              Hi, I&apos;m Leos, a fullstack developer specializing in{" "}
               <span className="font-bold">NextJS and ReactJS</span>, with a
               passion for creating user-centric experiences through{" "}
               <span className="font-bold">UX/UI design</span>. With three years
-              of experience in modern web development, I've experience working
+              of experience in modern web development, I&apos;ve experience working
               with frontend and backend technologies, including{" "}
               <span className="font-bold">
                 Express, SQL, and NoSQL databases
@@ -214,9 +214,9 @@ export default function Home() {
               {"<Contact for Work />"}
             </h1>
             <p className="hidden font-space-mono text-violet-dark md:block">
-              Feel free to reach out to me at my contact. I'm always eager to
+              Feel free to reach out to me at my contact. I&apos;m always eager to
               discuss new projects, collaborations, or simply share insights on
-              the industry's latest trends.
+              the industry&apos;s latest trends.
             </p>
             <div className="flex flex-col flex-wrap gap-4 lg:flex-row">
               <div
