@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import ProjectCard from "./ProjectCard";
+import SkeletonCard from "./SkeletonCard";
 
 const getWorks = async () => {
   try {
@@ -28,11 +29,14 @@ type Work = {
 
 const WorksCarousel = () => {
   const [works, setWorks] = useState<Work[]>([]);
+  const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
     const fetchWorks = async () => {
+      setIsFetching(true);
       const data = await getWorks();
       setWorks(data);
+      setIsFetching(false);
     };
     fetchWorks();
   }, []);
@@ -46,21 +50,32 @@ const WorksCarousel = () => {
       className="w-full"
     >
       <CarouselContent className="py-8">
-        {works.map((work, index) => (
-          <CarouselItem
-            className="flex w-full flex-col items-center justify-start md:basis-1/2 lg:basis-1/3"
-            key={index}
-          >
-            <ProjectCard
-              type="works"
-              index={index + 1}
-              title={work.title}
-              date={work.date}
-              img={work.img}
-              classNames=""
-            />
-          </CarouselItem>
-        ))}
+        {isFetching ? (
+          Array.from({ length: 6 }).map((_, index) => (
+            <CarouselItem
+              className="flex w-full flex-col items-center justify-start md:basis-1/2 lg:basis-1/3"
+              key={index}
+            >
+              <SkeletonCard />
+            </CarouselItem>
+          ))
+        ) : (
+          works.map((work, index) => (
+            <CarouselItem
+              className="flex w-full flex-col items-center justify-start md:basis-1/2 lg:basis-1/3"
+              key={index}
+            >
+              <ProjectCard
+                type="works"
+                index={index + 1}
+                title={work.title}
+                date={work.date}
+                img={work.img}
+                classNames=""
+              />
+            </CarouselItem>
+          ))
+        )}
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />

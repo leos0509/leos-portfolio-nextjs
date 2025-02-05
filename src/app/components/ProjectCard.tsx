@@ -13,23 +13,6 @@ type ProjectCardProps = {
   classNames?: string;
 };
 
-const SkeletonCard = () => {
-  return (
-    <div className="group flex w-[90%] flex-col gap-2 text-violet-dark transition-all ease-in-out hover:scale-110 hover:cursor-pointer">
-      <div className="flex w-fit items-center justify-start font-pixel text-lg">
-        00
-      </div>
-      <div className="overflow-hidden rounded-xl border-2 border-violet-dark bg-violet-light p-2 shadow-hard shadow-violet-dark xl:rounded-3xl xl:p-4">
-        <Skeleton className="aspect-square h-full w-full rounded-lg xl:rounded-2xl" />
-      </div>
-      <Skeleton className="aspect-square h-4 w-[40%] rounded-md" />
-      <div className="font-space-mono text-xl font-bold capitalize transition-all ease-in-out">
-        <Skeleton className="aspect-square h-8 w-[80%] rounded-md" />
-      </div>
-    </div>
-  );
-};
-
 const ProjectCard = ({
   index,
   title,
@@ -40,7 +23,6 @@ const ProjectCard = ({
   classNames,
 }: ProjectCardProps) => {
   return (
-    <Suspense fallback={<SkeletonCard />}>
       <div
         className={twMerge(
           "group flex w-[90%] flex-col gap-2 text-violet-dark transition-all ease-in-out hover:scale-110 hover:cursor-pointer",
@@ -74,7 +56,6 @@ const ProjectCard = ({
           {title}
         </div>
       </div>
-    </Suspense>
   );
 };
 
