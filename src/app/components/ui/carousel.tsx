@@ -7,7 +7,6 @@ import useEmblaCarousel, {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/app/components/ui/button";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -196,20 +195,23 @@ CarouselItem.displayName = "CarouselItem";
 
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
-  React.ComponentProps<typeof Button>
->(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+>(({ className, ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
     <button
+      ref={ref}
       className={cn(
         "bg-yellow-base text-violet-dark hover:bg-yellow-medium hover:text-violet-dark border-violet-dark shadow-hard shadow-violet-dark absolute hidden size-10 items-center justify-center rounded-full border-2 p-2 md:flex hover:scale-105 active:scale-100",
         orientation === "horizontal"
           ? "left-0 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        className,
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
+      {...props}
     >
       <ArrowLeft className="size-8" />
       <span className="sr-only">Previous slide</span>
@@ -220,20 +222,23 @@ CarouselPrevious.displayName = "CarouselPrevious";
 
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
-  React.ComponentProps<typeof Button>
->(({ className, variant = "default", size = "icon", ...props }, ref) => {
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+>(({ className, ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
     <button
+      ref={ref}
       className={cn(
         "bg-yellow-base text-violet-dark hover:bg-yellow-medium hover:text-violet-dark border-violet-dark shadow-hard shadow-violet-dark absolute hidden size-10 items-center justify-center rounded-full border-2 p-2 md:flex hover:scale-110 active:scale-100 transition-all duration-100",
         orientation === "horizontal"
           ? "right-0 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        className,
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
+      {...props}
     >
       <ArrowRight className="size-8" />
       <span className="sr-only">Next slide</span>
