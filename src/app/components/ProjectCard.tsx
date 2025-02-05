@@ -1,7 +1,6 @@
 import { Dot } from "lucide-react";
-import React, { Suspense } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
-import { Skeleton } from "./ui/skeleton";
 
 type ProjectCardProps = {
   index: number;
