@@ -3,9 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div
       className="relative mx-auto flex h-fit max-h-[600px] max-w-[2000px] items-center justify-between overflow-hidden bg-violet-dark p-8 py-16 text-yellow-light md:h-[50%] md:px-24 xl:px-32"

@@ -8,8 +8,6 @@ import {
 } from "./ui/carousel";
 import ProjectCard from "./ProjectCard";
 
-type Props = {};
-
 const getWorks = async () => {
   try {
     const res = await fetch("/api/works", { cache: "no-cache" });
@@ -28,7 +26,7 @@ type Work = {
   img: string;
 };
 
-const WorksCarousel = (props: Props) => {
+const WorksCarousel = () => {
   const [works, setWorks] = useState<Work[]>([]);
 
   useEffect(() => {
