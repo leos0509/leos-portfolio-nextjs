@@ -59,6 +59,9 @@ export default function Home() {
                 <h1 className="motion-preset-slide-right font-pixel text-4xl font-semibold uppercase text-violet-dark motion-duration-500 md:text-6xl">
                   <span>Leos Pham</span>
                 </h1>
+                <h1 className="motion-preset-slide-right font-pixel text-lg font-semibold uppercase text-violet-dark motion-duration-500 md:text-2xl">
+                  <span>{process.env.NEXT_PUBLIC_ADMIN_FULLNAME}</span>
+                </h1>
                 <p className="motion-preset-slide-right font-space-mono text-violet-medium motion-duration-500 motion-delay-100">
                   <span>UX/UI DESIGNER - FULLSTACK DEVELOPER</span>
                 </p>
