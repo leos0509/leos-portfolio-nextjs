@@ -1,37 +1,75 @@
-# Foobar
+# Leos Portfolio
 
-Foobar is a Python library for dealing with word pluralization.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)](https://www.mongodb.com/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-CSS-blue?logo=tailwindcss)](https://tailwindcss.com/)
+[![React Motion](https://img.shields.io/badge/React%20Motion-Animation-blue?logo=react)](https://github.com/chenglou/react-motion)
+[![ShadCN UI](https://img.shields.io/badge/ShadCN-UI-black?logo=react)](https://ui.shadcn.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-Hosting-black?logo=vercel)](https://vercel.com/)
 
-## Installation
+## 🌐 Live Preview
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+🚀 [Visit my Portfolio](https://www.leos-fullstack.me)
 
-```bash
-pip install foobar
+## 📖 About
+
+This is my personal portfolio showcasing my projects, blog posts, and technical expertise. Built using **Next.js, MongoDB, TailwindCSS, React Motion, ShadCN UI, and deployed on Vercel**, it is designed to be fast, dynamic, and easily maintainable.
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js, TailwindCSS, ShadCN UI, React Motion
+- **Database:** MongoDB
+- **Deployment:** Vercel
+
+## 📝 Features
+
+- 🏆 Showcase of featured projects
+- ✍️ Blog powered by Markdown
+- ⚡ Fast and responsive UI with TailwindCSS & ShadCN UI
+- 🌍 SEO optimized with Next.js
+- 🎨 Smooth animations with React Motion
+
+## 🛠 Installation and Usage Guide
+
+### Prerequisites
+- Node.js (>= 16.x)
+- npm or yarn installed
+
+### Installation
+```sh
+# Clone the repository
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+
+# Install dependencies
+npm install  # or yarn install
+
+# Start the development server
+npm run dev  # or yarn dev
 ```
 
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+### Building for Production
+```sh
+npm run build  # or yarn build
+npm run start  # or yarn start
 ```
 
-## Contributing
+### Deployment
+This project is optimized for **Vercel**. You can deploy it easily by connecting your GitHub repository to Vercel and deploying directly.
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Alternatively, you can deploy it manually:
+```sh
+vercel --prod
+```
 
-Please make sure to update tests as appropriate.
+## 🔗 Links
 
-## License
+- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)
+- 📂 [GitHub](https://github.com/your-username)
+- 📝 [Blog](https://your-blog-url.com)
+- 📧 [Contact Me](mailto:your-email@example.com)
 
-[MIT](https://choosealicense.com/licenses/mit/)
+---
+
+💡 Feel free to fork this repo and customize it for your own portfolio!
+
