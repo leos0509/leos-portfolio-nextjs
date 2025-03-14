@@ -11,6 +11,10 @@
 
 🚀 [Visit my Portfolio](https://www.leos-fullstack.me)
 
+![Portfolio Preview](https://ik.imagekit.io/eef0on2jw/Readme.md/Portfolio/Screenshot%202025-03-14%20105144.png?updatedAt=1741924436893)
+
+![Portfolio Preview](https://ik.imagekit.io/eef0on2jw/Readme.md/Portfolio/Screenshot%202025-03-14%20105234.png?updatedAt=1741924436738)
+
 ## 📖 About
 
 This is my personal portfolio showcasing my projects, blog posts, and technical expertise. Built using **Next.js, MongoDB, TailwindCSS, React Motion, ShadCN UI, and deployed on Vercel**, it is designed to be fast, dynamic, and easily maintainable.
