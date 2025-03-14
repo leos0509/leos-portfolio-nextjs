@@ -64,10 +64,10 @@ vercel --prod
 
 ## 🔗 Links
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)
-- 📂 [GitHub](https://github.com/your-username)
-- 📝 [Blog](https://your-blog-url.com)
-- 📧 [Contact Me](mailto:your-email@example.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/leosfullstackvn/)
+- 📂 [GitHub](https://github.com/leos0509)
+- 📝 [Blog](https://www.leos-fun-blog.online/)
+- 📧 [Contact Me](mailto:baopham.201015@gmail.com)
 
 ---
 
